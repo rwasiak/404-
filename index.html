@@ -6,99 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>404-not-found-challenge</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
 
-        header {
-            position: absolute;
-            left: 77px;
-            top: 40px;
-        }
-
-        h1 {
-
-            font-family: 'Inconsolata', monospace;
-            height: 24px;
-            letter-spacing: -0.08em;
-            text-transform: uppercase;
-            color: #333333;
-
-        }
-
-        main {
-            position: absolute;
-            top: 20%;
-            bottom: 20%;
-            left: 0;
-            right: 0;
-            padding: 0 100px;
-            display: flex;
-            justify-content: space-between;
-
-        }
-
-        aside {
-            background-image: url('Scarecrow.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            flex-basis: 48%;
-        }
-
-        article {
-            flex-basis: 48%;
-
-        }
-
-        h2 {
-            font-family: 'Space Mono', monospace;
-            font-size: 64px;
-            font-weight: bold;
-            color: #333333;
-
-        }
-
-        p {
-            font-family: Space Mono;
-            font-size: 24px;
-            letter-spacing: -0.035em;
-            width: 60%;
-            color: #4F4F4F;
-            padding: 24px 0;
-        }
-
-        button {
-            font-family: Space Mono;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 14px;
-            letter-spacing: -0.035em;
-            text-transform: uppercase;
-            padding: 24px 43px;
-            margin-top: 20px;
-            background-color: #333333;
-            color: #FFFFFF;
-            border-style: none;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 2%;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            font-family: 'Inconsolata', monospace;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 14px;
-            text-transform: uppercase;
-
-        }
-    </style>
 </head>
 
 <body>
@@ -113,7 +23,10 @@
             <button>back to homepage</button>
         </article>
     </main>
-    <footer>ps</footer>
+    <!-- dlaczego bez tego diva, na <footer> nie działa flexbox od body? -->
+    <div class="footer">
+        <footer>ps - this is footer</footer>
+    </div>
 </body>
 
 </html>
